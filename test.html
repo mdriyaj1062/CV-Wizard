@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Box with Alert</title>
+  <!-- Include jQuery -->
+</head>
+<body>
+    
+  <label for="userInput">Enter Text:</label>
+  <input type="text" id="userInput">
+  <label for="userInput">Enter Text:</label>
+
+  <input type="text" id="userInput1">
+    <!-- jQuery Code -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+      $(document).ready(function() {
+      var userInput = $('#userInput');
+      userInput.on('input', function() {
+        // Get the value entered by the user
+        var enteredText = $(this).val();
+          
+
+
+    //   var arr = [];
+    //    var rahul = [1,2,3,1,2];
+    //    for (i = 0, i<= rahul.length,i++){
+    //      var value = in_array(rahul[i],rahul);
+    //      if(value){
+    //             print('value existed')
+    //      }else{
+    //         arr.push(value);
+ 
+    //      }
+    //    }
+
+
+
+    var a =[1,2,4];
+    var b = [2,6];
+    var c =[];
+    c.push(a);
+    c.push(b);
+    for (i = 0, i<= c.length,i++){
+         var value = in_array(c[i],c);
+         if(value){
+             arr.pop(value);
+        }else{
+            print('value existed')
+ 
+         }
+       }
+
+
+
+
+
+
+c = [1,2,4]
+
+
+
+        // Show an alert with the entered text
+        alert('You entered: ' + enteredText);
+      });
+    });
+  </script>
+
+</body>
+</html>
